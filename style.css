@@ -16,7 +16,7 @@ body {
 main {
     min-width: 300px;
     width: 40%;
-    height: 500px;
+    height: auto;
     border: 1px solid black;
     display: flex;
     border-radius: 20px;
@@ -28,9 +28,10 @@ main {
     border-radius: 20px;
     flex-direction: column;
     height: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
+    gap: 30px;
 }
 .summary {
     border: none;
@@ -55,8 +56,24 @@ button {
     border: none;
     padding: 18px;
     background-color: hsl(224, 30%, 27%);
-    border-radius: 20px;
+    border-radius: 40px;
     color: white;
     font-size: 15px;
     font-weight: 500;
+}
+.img-text {
+    display: flex;
+    gap: 10px;
+}
+.reaction {
+    color: hsl(0, 100%, 67%);
+}
+.memory {
+    color: hsl(39, 100%, 56%);
+}
+.verbal {
+    color: hsl(166, 100%, 37%);
+}
+.visual {
+    color: hsl(234, 85%, 45%);
 }
