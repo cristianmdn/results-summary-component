@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background: hsl(221, 100%, 96%);
+    background: hsl(241, 100%, 89%);
     font-family: "Hanken Grotesk", sans-serif;
     font-size: 18px;
     display: flex;
@@ -12,29 +12,36 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: hsl(221, 100%, 96%);
 }
 main {
     min-width: 300px;
-    width: 40%;
-    height: auto;
-    border: 1px solid black;
+    width: 700px;
     display: flex;
-    border-radius: 20px;
+    border-radius: 30px;
+    background-color: #fff;
 }
 .your-result, .summary {
     width: 50%;
-    border: 1px solid black;
     display: flex;
-    border-radius: 20px;
+    border-radius: 30px;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
     gap: 30px;
+    padding: 40px 60px;
+}
+.your-result {
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    color: #fff;
+}
+.your-result > p {
+    text-align: center;
 }
 .summary {
     border: none;
+    align-items: flex-start;
 }
 .reaction, .memory, .verbal, .visual {
     display: flex;
@@ -47,7 +54,7 @@ main {
     width: 180px;
     height: 180px;
     border-radius: 50%;;
-    border: 1px solid black;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(256, 72%, 46%, .75), hsla(256, 72%, 46%, .5), hsla(256, 72%, 46%, 0));
     align-items: center;
     justify-content: center;
 }
