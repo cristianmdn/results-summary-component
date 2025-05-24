@@ -149,8 +149,8 @@ footer a {
         border-bottom-right-radius: 40px;
     }
     .summary {
-        padding: 20px;
-        gap: 30px;
+        padding: 20px 40px;
+        gap: 25px;
     }
     .score {
         width: 120px;
@@ -169,7 +169,7 @@ footer a {
         color: black;
     }
     .reaction, .memory, .verbal, .visual, button {
-        padding: 8px;
+        padding: 12px;
     }
 }
 @media (max-width: 320px) {
@@ -181,7 +181,7 @@ footer a {
         font-size: 12px;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 250px) {
     main {
         min-width: 200px;
         font-size: 10px;
