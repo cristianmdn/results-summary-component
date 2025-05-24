@@ -15,7 +15,7 @@ body {
     background-color: hsl(221, 100%, 96%);
 }
 main {
-    min-width: 300px;
+    min-width: 350px;
     width: 700px;
     display: flex;
     border-radius: 30px;
@@ -26,7 +26,6 @@ main {
     display: flex;
     border-radius: 30px;
     flex-direction: column;
-    height: 100%;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
@@ -40,13 +39,9 @@ main {
     text-align: center;
 }
 .summary {
-    border: none;
     align-items: flex-start;
-}
-.reaction, .memory, .verbal, .visual {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 .score {
     display: flex;
@@ -57,30 +52,106 @@ main {
     background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(256, 72%, 46%, .75), hsla(256, 72%, 46%, .5), hsla(256, 72%, 46%, 0));
     align-items: center;
     justify-content: center;
+    gap: 10px;
+}
+.score h1 {
+    scale: 1.7;
+}
+.img-text {
+    display: flex;
+    gap: 10px;
+}
+.summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+.reaction, .memory, .verbal, .visual {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 16px;
+}
+.reaction {
+    background-color: hsla(0, 100%, 67%, .1);
+}
+.reaction .img-text {
+    color: hsl(0, 100%, 67%);
+}
+.memory {
+    background-color: hsla(39, 100%, 56%, .1);
+}
+.memory .img-text {
+    color: hsl(39, 100%, 56%);
+}
+.verbal {
+    background-color: hsla(166, 100%, 37%, .1);
+}
+.verbal .img-text {
+    color: hsl(166, 100%, 37%);
+}
+.visual {
+    background-color: hsla(234, 85%, 45%, .1);
+}
+.visual .img-text {
+    color: hsl(234, 85%, 45%);
 }
 button {
     width: 100%;
     border: none;
-    padding: 18px;
+    padding: 16px;
     background-color: hsl(224, 30%, 27%);
     border-radius: 40px;
     color: white;
     font-size: 15px;
     font-weight: 500;
 }
-.img-text {
+footer {
     display: flex;
-    gap: 10px;
+    margin-top: 50px;
 }
-.reaction {
-    color: hsl(0, 100%, 67%);
+.gray {
+    color: hsl(241, 100%, 89%);
 }
-.memory {
-    color: hsl(39, 100%, 56%);
+@media (max-width: 750px) {
+    body {
+        font-size: 14px;
+    }
+    main {
+        width: 500px;
+    }
 }
-.verbal {
-    color: hsl(166, 100%, 37%);
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        border-radius: 0;
+    }
+    .your-result, .summary {
+        width: 100%;
+        border-radius: 0;
+        gap: 15px;
+    }
+    .your-result {
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .summary {
+        padding: 20px;
+    }
+    .score {
+        width: 120px;
+        height: 120px;
+    }
+    footer {
+        display: none;
+    }
 }
-.visual {
-    color: hsl(234, 85%, 45%);
+@media (max-width: 320px) {
+    main {
+        min-width: 280px;
+    }
 }
